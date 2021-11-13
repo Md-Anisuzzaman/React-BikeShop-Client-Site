@@ -1,23 +1,72 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './Component/Home/Home';
+import Reviews from './Component/Reviews/Reviews';
+import About from './Component/About/About';
+import Footer from './Component/Footer/Footer';
+import Explore from './Component/Explore/Explore';
+import AuthProvider from './Component/Context/AuthProvider';
+import Login from './Component/Login/Login';
+import Register from './Component/Register/Register';
+import Header from './Component/Home/Header';
+import AddProduct from './Component/AddProduct/AddProduct';
+import MyOrders from './Component/MyOrders/MyOrders';
+import DashBoard from './Component/DashBoard/DashBoard';
+import Details from './Component/Details/Details';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+        <Router>
+        <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/addproduct">
+             <AddProduct></AddProduct>
+            </Route>
+            <Route exact path="/myorders">
+           <MyOrders></MyOrders>
+            </Route>
+            <Route path="/reviews">
+              <Reviews></Reviews>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/explore">
+              <Explore></Explore>
+            </Route>
+            <Route path="/products/:productId">
+             <Details></Details>
+            </Route>
+            <Route path="/dashboard">
+             <DashBoard></DashBoard>
+            </Route>
+            <Route path="/login">
+             <Login></Login>
+            </Route>
+            <Route path="/register">
+            <Register></Register>
+            </Route>
+            {/* <Route path="/footer">
+              <Footer></Footer>
+            </Route> */}
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

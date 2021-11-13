@@ -1,0 +1,11 @@
+.dashboard-body {
+    background-color: whitesmoke ;
+    height: 100vh;
+    border-right: 2px solid rgb(246, 195, 195);
+    font-size: large;
+    cursor: pointer;
+  }
+  .dashboard-menu {
+    list-style: none;
+    margin-top: 10px;
+  }

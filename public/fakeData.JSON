@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "model": "AMB 001",
+        "email": "alom@gmail.com",
+        "price": 4050,
+        "details": "The AMB 001 has now started its official testing process, with a disguised prototype appearing on the Pau-Arnos circuit in southern France, a couple of hours from Brough’s base in Toulouse.The bodywork’s structure is also unusual, developed with the help of composites engineering firm Mecano ID. Henriette said: “One of the key design features of the AMB 001 is an aluminum fin that runs along the full length",
+        "img": "https://kids.com.py/media/magefan_blog/motocycle-03.jpg"
+    },
+    {
+        "id": 2,
+        "model": "AMB 001",
+        "email": "honey@gmail.com",
+        "price": 3050,
+        "details": "The Hunk sports a stylish look, exudes a commanding presence and makes sure you always stay connected. It's where power and style meet to ensure you take over the city.",
+        "img": "https://664305.smushcdn.com/1944490/wp-content/uploads/sites/46/2020/03/CFMoto-300SR-169FullWidth-f1edd2de-1677899.jpg?lossy=1&strip=1&webp=1"
+    },
+    {
+        "id": 3,
+        "model": "KTM-RC 390",
+        "email": "riya@gmail.com",
+        "price": 3000,
+        "details": "he 2017 KTM RC390 Sports A Host Of Updates But It Hasn’t Gotten The Generation Change That The 390 Duke Has. That’s Not To Take Away From Its Improvements, Though: The One Change We’re Sure Everyone Will Appreciate Is The Addition Of A More Comfortable Seat. Adding To Its Usability Are Wider Mirrors, Adjustable Levers, And A Ride-By-Wire Throttle",
+        "img": "https://5.imimg.com/data5/JV/EK/MY-44176509/ktm-rc-390-power-bike-500x500.jpg"
+    },
+    {
+        "id": 4,
+        "model": "Honda BS-6",
+        "email": "nadim@gmail.com",
+        "price": 2020,
+        "details": "The new Honda Shine gets a cleaner engine, a raft of new features, and a five-speed transmission as opposed to four-speed gearbox on the predecessor.",
+        "img": "https://imgk.timesnownews.com/story/Honda_Shine_BS_6_side.png?tr=w-1200,h-900"
+    },
+    {
+        "id": 5,
+        "model": "AMB-700",
+        "email": "royal@gmail.com",
+        "price": 2550,
+        "details": "Already a little lighter and a little more powerful than the arch-rival Suzuki Hayabusa, Kawasaki has stroked the ZX-14R’s motor out to 1,441cc and fitted traction control and a three-mode, ride-by-wire throttle. The result of all this is a bike that should be considerably faster than before, but also easier to ride. Engine mods are designed to pad out the power and torque curves throughout",
+        "img": "https://cdn.motor1.com/images/mgl/Ww1mO/s3/the-fastest-motorcycle-in-the-world-in-a-straight-line.webp"
+    },
+    {
+        "id": 6,
+        "model": "RR 100",
+        "price": 3300,
+        "email": "suny@gmail.com",
+        "details": "No sports bike top ten would be complete without a beautiful Ducati, in this case the new for 2018 V4 powered Panigale V4 S. It sets the bar high on looks, power, weight and features all the tech you would expect.There's Ohlins electrically adjustable suspension, cornering ABS, slide control, a lean angle aware quickshifter, gorgeous TFT dash and of course the stunning single sided swingarm with no massive exhaust to ruin the lines.",
+        "img": "https://www.thebikemarket.co.uk/media/5354698/P90427257-highRes.jpg?width=640"
+    },
+    {
+        "id": 7,
+        "model": "BMW 1000",
+        "email": "milon@gmail.com",
+        "price": 3020,
+        "details": "Apart from its distinctive design cues such as the split face concept and asymmetrical front headlamps, this super sport bike gets digital gauges, LED headlamp, tail lamp, and indicators. It’s also blessed with cruise control and a pair of good looking 17-inch rims.",
+        "img": "https://d29c80i09kxy2a.cloudfront.net/custom/motorcycle-model-photo/mobile/gallery/5e0de835d5c8b.jpg"
+    },
+    {
+        "id": 8,
+        "model": "Eorty AGE",
+        "email": "kuddus@gmail.com",
+        "price": 1180,
+        "details": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
+        "img": "https://images.pexels.com/photos/2611686/pexels-photo-2611686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id": 9,
+        "model": "Triumph D-70",
+        "email": "kuddus@gmail.com",
+        "price": 3980,
+        "details": "At the 10th spot on the list of Highest CC Bikes in the world, we have theTriumph D-70. This Beemer is a touring machine and it is also offered in three more variants. The GT variant is offered in four different paint schemes and it is loaded with premium equipment onboard.",
+        "img": "https://www.topgear.com/sites/default/files/images/news-article/carousel/2021/03/17f9cd9cf95c6f207a32fb1151971fe9/2.jpg"
+    },
+    {
+        "id": 10,
+        "model": "Yamaha-XSR900",
+        "email": "kuddus@gmail.com",
+        "price": 2500,
+        "details": "After graduating from West Virginia University Medical School, Dr. Jonathon Alex completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Jonathon Alex was team physician for the University of Akron and Walsh University.",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/01/2020-Yamaha-XSR900.jpg"
+    }
+]

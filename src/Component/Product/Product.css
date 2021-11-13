@@ -1,0 +1,17 @@
+.productItems-border{
+    /* border: 2px solid cyan;*/
+} 
+
+.cart{
+    background-color: #0f131c;
+    height: 380px;
+    /* border: 1px solid cyan; */
+    color: white;
+}
+
+.img-wraping{
+    height: 210px;
+    width: 85%;
+    /* overflow-y: hidden; */
+    object-fit: contain;
+}
