@@ -19,13 +19,14 @@ import MyOrders from './Component/MyOrders/MyOrders';
 import DashBoard from './Component/DashBoard/DashBoard';
 import Details from './Component/Details/Details';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import Product from './Component/Product/Product';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
-        <Header></Header>
+          <Header></Header>
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -34,10 +35,10 @@ function App() {
               <Home></Home>
             </Route>
             <Route exact path="/addproduct">
-             <AddProduct></AddProduct>
+              <AddProduct></AddProduct>
             </Route>
             <Route exact path="/myorders">
-           <MyOrders></MyOrders>
+              <MyOrders></MyOrders>
             </Route>
             <Route path="/reviews">
               <Reviews></Reviews>
@@ -45,20 +46,23 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
-            <Route path="/explore">
+            <PrivateRoute exact path="/product">
+              <Product></Product>
+            </PrivateRoute>
+            <PrivateRoute path="/explore">
               <Explore></Explore>
-            </Route>
-            <Route path="/products/:productId">
-             <Details></Details>
-            </Route>
+            </PrivateRoute>
+            <PrivateRoute path="/products/:productId">
+              <Details></Details>
+            </PrivateRoute>
             <Route path="/dashboard">
-             <DashBoard></DashBoard>
+              <DashBoard></DashBoard>
             </Route>
             <Route path="/login">
-             <Login></Login>
+              <Login></Login>
             </Route>
             <Route path="/register">
-            <Register></Register>
+              <Register></Register>
             </Route>
             {/* <Route path="/footer">
               <Footer></Footer>

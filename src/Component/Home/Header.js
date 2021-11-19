@@ -12,16 +12,20 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand style={{ fontSize: "22px" }}>BuyBike</Navbar.Brand>
                     <Nav className="me-right">
-                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/home">Home</NavLink>
-                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/about">About</NavLink>
-                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/explore">Explore</NavLink>
+                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/home">Home</NavLink>
+                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/about">About</NavLink>
+                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/explore">Explore</NavLink>
                         {/* <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/addproduct">AddProduct</NavLink> */}
-                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/dashboard">Dashboard</NavLink>
+                        <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/dashboard">Dashboard</NavLink>
                         {
                             user?.email ?
-                                <NavLink onClick={logOut} style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="logout">Logout</NavLink>
+                                <div>
+                                    <span style={{ textDecoration: "none", color: 'yellow', fontSize: '20px', marginRight: '15px' }} >Sign in as: {user.email}</span>
+                                    <NavLink onClick={logOut} style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="logout">Logout</NavLink>
+                                </div>
+
                                 :
-                                <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/login">Login</NavLink>
+                                <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/login">Login</NavLink>
                         }
                     </Nav>
                 </Container>

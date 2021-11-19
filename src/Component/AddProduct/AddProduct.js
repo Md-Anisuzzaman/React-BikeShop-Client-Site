@@ -1,6 +1,5 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import useAuth from '../Hooks/useAuth';
 import './AddProduct.css'
 
 const AddProduct = () => {

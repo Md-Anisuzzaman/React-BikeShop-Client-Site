@@ -30,13 +30,15 @@ const MyOrder = () => {
 
     return (
         <div>
-            <h2>My All orders are {orders.length} </h2>
-            <Table className="m-body" striped bordered hover>
+            <h2 className="mt-2">My All orders are {orders.length} </h2>
+            <Table className="m-body mt-4" striped bordered hover>
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Product</th>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Address</th>
                         <th>Price</th>
                         <th>Action</th>
                     </tr>
@@ -46,9 +48,11 @@ const MyOrder = () => {
                         <tbody key={order._id}>
                             <tr>
                                 <td style={{ 'color': 'black' }}>{order._id}</td>
+                                <td>{order.model}</td>
                                 <td>{order.name}</td>
                                 <td>{order.email}</td>
-                                <td>{order.price}$</td>
+                                <td>{order.address}</td>
+                                <td>${order.price}</td>
                                 <button onClick={() => handleDelete(order._id)} className="btn btn-danger text-dark">Delete</button>
                             </tr>
                         </tbody>

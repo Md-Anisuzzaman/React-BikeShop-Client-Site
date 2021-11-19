@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 
 const Register = () => {
@@ -9,7 +9,7 @@ const Register = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        registerUser(data.email, data.password,data.name);
+        registerUser(data.email, data.password, data.name);
         console.log(data);
     };
     return (
@@ -21,8 +21,8 @@ const Register = () => {
                     {...register("name", { required: true })}
                     name="name"
                     placeholder="Name"
-                    type="name"     
-                    
+                    type="name"
+
                 />
                 <br />
                 <input
@@ -31,7 +31,7 @@ const Register = () => {
                     name="email"
                     placeholder="Email"
                     type="email"
-                   
+
                 />
                 <br />
                 <input
@@ -39,17 +39,17 @@ const Register = () => {
                     {...register("password", { required: true })}
                     name="password"
                     type="password"
-                    placeholder="Password"       
-                  
+                    placeholder="Password"
+
                 />
                 <br />
                 <input
                     className="submit-btn btn btn-info fs-5 mb-3"
                     type="submit"
                     value="Register"
-                />   
+                />
             </form>
-            <NavLink style={{ textDecoration: 'none',fontSize: '25px' }} to='/login'>Already Registered? Please Login</NavLink>
+            <NavLink style={{ textDecoration: 'none', fontSize: '25px' }} to='/login'>Already Registered? Please Login</NavLink>
         </div>
     );
 };

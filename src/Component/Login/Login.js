@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 import '../AddProduct/AddProduct.css'
 
 const Login = () => {
-    const { loginUser } = useAuth();
+    const { loginUser, user } = useAuth();
 
     const location = useLocation();
-    const history = useHistory();
-    const redirect_url = location.state?.from || '/home';
+    let history = useHistory();
+    const redirect_url = location?.state?.from?.pathname || '/home';
     console.log(redirect_url);
 
+    useEffect(() => {
+        if (user.email) {
+            history.replace(redirect_url);
+        }
+    }, [user])
 
 
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
         loginUser(data.email, data.password);
-        console.log(data);
+        console.log(data, location, history);
+        history.replace(redirect_url);
     };
 
     // const handleSignIn = () => {
@@ -52,7 +58,7 @@ const Login = () => {
                     className="submit-btn btn btn-primary mb-3 fs-5"
                     type="submit"
                     value="Login"
-                    // onClick={handleSignIn}
+                // onClick={handleSignIn}
                 />
             </form>
             <NavLink style={{ textDecoration: 'none', fontSize: '25px' }} to='/register'>Not Yet Registered? Please Register</NavLink>
