@@ -4,6 +4,8 @@ import './AddProduct.css'
 
 const AddProduct = () => {
 
+//useForm  from react form
+
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
