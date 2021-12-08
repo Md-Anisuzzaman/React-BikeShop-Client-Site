@@ -23,7 +23,7 @@ const Explore = () => {
                                     <img className="img-wrap" src={bike.img} alt="" />
                                 </div>
                                 <div className="mt-2">
-                                    <h5>Model:{bike.model}</h5>
+                                    <h5>Model: {bike.model}</h5>
                                     <p>Price: ${bike.price}</p>
                                     <Link to={`/products/${bike._id}`}> <button className="btn btn-warning">Details</button></Link>
                                     {/* <p className="p-4 text-justify"><span className="fw-bold">Details:</span> {service.details}</p> */}

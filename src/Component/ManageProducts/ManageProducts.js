@@ -12,7 +12,7 @@ const ManageProducts = () => {
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/allproduct-delete/${id}`;
+        const url = `https://morning-taiga-95639.herokuapp.com/allproduct-delete/${id}`;
         fetch(url, {
             method: 'POST'
         })

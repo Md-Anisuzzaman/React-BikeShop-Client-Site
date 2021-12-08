@@ -38,7 +38,7 @@ const useFirebase = () => {
     }
 
     const addUsers = (email) => {
-        fetch('http://localhost:5000/addusers', {
+        fetch('https://morning-taiga-95639.herokuapp.com/addusers', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ email }),

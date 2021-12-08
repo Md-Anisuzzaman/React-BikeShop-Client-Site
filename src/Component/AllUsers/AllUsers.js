@@ -5,13 +5,13 @@ const AllUsers = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allusers')
+        fetch('https://morning-taiga-95639.herokuapp.com/allusers')
             .then((res) => res.json())
             .then((data) => setUsers(data));
     }, []);
 
     const handleAdmin = id => {
-        const url = 'http://localhost:5000/makeadmin'
+        const url = 'https://morning-taiga-95639.herokuapp.com/makeadmin'
         fetch(url, {
             method: 'POST',
             headers: { "content-type": "application/json" },
@@ -19,7 +19,7 @@ const AllUsers = () => {
         })
             .then(res => res.json())
             .then(data => {
-                fetch('http://localhost:5000/allusers')
+                fetch('https://morning-taiga-95639.herokuapp.com/allusers')
                     .then((res) => res.json())
                     .then((data) => setUsers(data));
                 console.log(data);

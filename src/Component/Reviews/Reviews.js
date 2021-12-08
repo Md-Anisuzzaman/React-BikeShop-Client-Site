@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Rating from 'react-rating';
 import './Review.css'
 
 const Reviews = () => {
     const [reviews, setreviews] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/allreview")
+        fetch("https://morning-taiga-95639.herokuapp.com/allreview")
             .then(res => res.json())
             .then(data => setreviews(data));
     }, [])
@@ -22,7 +23,19 @@ const Reviews = () => {
                                 </div>
                                 <div className="mt-2">
                                     <p>{review.review.slice(0, 100)}</p>
-                                    <p>{review.ratings}</p>
+                                    <Rating
+                                        readonly
+                                        initialRating={review.ratings}
+                                            emptySymbol ="far fa-star icon-color "
+                                           fullSymbol="fas fa-star icon-color"
+                                        
+                                        // emptySymbol="bi bi-star fs-5"
+                                        // fullSymbol="bi bi-star-fill text-warning fs-5"
+                                        // <i class="bi bi-star-fill"></i>
+                                        // <i class="bi bi-star"></i>
+
+                                    >
+                                    </Rating>
                                 </div>
                             </div>
                         </div>

@@ -62,4 +62,4 @@ const ManageOrders = () => {
     );
 };
 
-export default ManageOrders;
+export default ManageOrders ;
