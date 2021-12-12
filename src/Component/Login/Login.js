@@ -7,10 +7,10 @@ import '../AddProduct/AddProduct.css'
 const Login = () => {
     const { loginUser, user } = useAuth();
 
-   
+
     let history = useHistory();
-     const location = useLocation();
-     const redirect_url = location?.state?.from?.pathname || '/home';
+    const location = useLocation();
+    const redirect_url = location?.state?.from?.pathname || '/home';
     console.log(redirect_url);
 
     useEffect(() => {
@@ -25,16 +25,7 @@ const Login = () => {
         loginUser(data.email, data.password);
         console.log(data, location, history);
         history.replace(redirect_url);
-       
     };
-
-    // const handleSignIn = () => {
-    //     loginUser()
-    //         .then((result) => {
-    //             history.push(redirect_url);
-    //         });
-    // }
-
 
     return (
         <div className="mt-5 mb-5">

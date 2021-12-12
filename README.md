@@ -15,6 +15,13 @@ Project-Live-Link : https://zen-liskov-1aaaa1.netlify.app/
 4/Used react hook form <br>
 <br>
 5/Used Firebase Email and Password Authentication
+<br>
+6/Dashboard feature added for admin and users
+<br>
+7/Admin can add new product to UI, delete a product, manage product also can make a user admin
+<br>
+8/Users can check order product and can delete order 
+
 
 
 

@@ -17,7 +17,7 @@ const MyOrder = () => {
     const handleDelete = id => {
         const url = `https://morning-taiga-95639.herokuapp.com/orders-delete/${id}`;
         fetch(url, {
-            method: 'POST'
+            method: 'DELETE'
         })
             // .then(res => res.json())
             // .then(data => {
@@ -28,12 +28,12 @@ const MyOrder = () => {
             // });
             .then(res => res.json())
             .then(data => {
-                if(data.deletedCount>0){
-                                const remainingOrders = bookingOrders.filter(order=>order._id !== id);
-                                setBookingOrders(remainingOrders);
-                                console.log(data);
-                            }
-                });
+                if (data.deletedCount > 0) {
+                    const remainingOrders = bookingOrders.filter(order => order._id !== id);
+                    setBookingOrders(remainingOrders);
+                    console.log(data);
+                }
+            });
     }
 
     return (

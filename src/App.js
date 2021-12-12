@@ -20,6 +20,7 @@ import DashBoard from './Component/DashBoard/DashBoard';
 import Details from './Component/Details/Details';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Product from './Component/Product/Product';
+import NotFound from './NotFound/NotFound';
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
             <Route exact path="/myorders">
               <MyOrders></MyOrders>
             </Route>
-            <Route path="/reviews">
+            <Route exact path="/reviews">
               <Reviews></Reviews>
             </Route>
             <Route path="/about">
@@ -55,14 +56,17 @@ function App() {
             <PrivateRoute path="/products/:productId">
               <Details></Details>
             </PrivateRoute>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <DashBoard></DashBoard>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="*">
+             <NotFound></NotFound>
             </Route>
             {/* <Route path="/footer">
               <Footer></Footer>

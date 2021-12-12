@@ -23,7 +23,7 @@ const ManageOrders = () => {
         if(proceed){
             const url = `https://morning-taiga-95639.herokuapp.com/orders-delete/${id}`;
             fetch(url, {
-                method: 'POST'
+                method: 'DELETE'
             }) 
             .then(res => res.json())
             .then(data => {

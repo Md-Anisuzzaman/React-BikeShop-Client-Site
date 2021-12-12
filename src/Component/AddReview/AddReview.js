@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import styles from './AddReview.module.css'
 
 const AddReview = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
         fetch("https://morning-taiga-95639.herokuapp.com/addreview", {
             method: "POST",
@@ -13,6 +13,8 @@ const AddReview = () => {
             .then((res) => res.json())
             .then((result) => console.log(result));
         console.log(data);
+        alert("Review added Successfully");
+        reset();
     };
     return (
         <div>

@@ -4,7 +4,7 @@ import './AddProduct.css'
 
 const AddProduct = () => {
 
-//useForm  from react form
+    //useForm  from react form
 
     const { register, handleSubmit } = useForm();
 
@@ -16,6 +16,7 @@ const AddProduct = () => {
         })
             .then((res) => res.json())
             .then((result) => console.log(result));
+        alert("Added another product")
         console.log(data);
     };
 

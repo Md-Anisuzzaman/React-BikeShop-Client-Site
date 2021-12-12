@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Product from '../Product/Product';
 import Reviews from '../Reviews/Reviews';
 
+
 const Home = () => {
     return (
         <div>

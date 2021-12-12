@@ -37,9 +37,9 @@ const DashBoard = () => {
                 <div className="col-md-3 ">
                     <div className="dashboard-body">
                         <h4 className="text-success mb-5">Users Dashboard Menue</h4>
-                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addproduct`}>
+                        {/* <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addproduct`}>
                             <li className="dashboard-menu">AddProduct</li>
-                        </Link>
+                        </Link> */}
                         <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/myorders`}>
                             <li className="dashboard-menu">MyOrders</li>
                         </Link>

@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
 
 const Register = () => {
 
     const { user, registerUser } = useAuth();
+
+
+    let history = useHistory();
+    const location = useLocation();
+    const redirect_url = location?.state?.from?.pathname || '/home';
+    console.log(redirect_url);
+
+    
+    useEffect(() => {
+        if (user.email) {
+            history.replace(redirect_url);
+        }
+    }, [user])
+
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
         registerUser(data.email, data.password, data.name);
+        console.log(data, location, history);
+        history.replace(redirect_url);
         console.log(data);
     };
     return (
