@@ -1,7 +1,8 @@
 import initializeFirebase from '../Firebase/Firebase-init';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 import { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory,useLocation} from 'react-router-dom';
+
 
 
 
@@ -14,9 +15,10 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [rurl, setRurl] = useState("");
 
-
     const auth = getAuth();
     let history = useHistory();
+    //let location = useLocation();
+    //const redirect_url = location?.state?.from?.pathname || '/home';
 
 
     const registerUser = (email, password) => {
@@ -51,6 +53,7 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
+            //history.replace(redirect_url);
         }).catch((error) => {
             // An error happened.
         });
@@ -77,7 +80,7 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-                console.log(rurl, history, "Logged in");
+                //console.log(rurl, history, "Logged in");
                 //history.push(rurl);
             } else {
                 setUser({});

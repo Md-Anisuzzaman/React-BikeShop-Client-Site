@@ -7,9 +7,10 @@ import '../AddProduct/AddProduct.css'
 const Login = () => {
     const { loginUser, user } = useAuth();
 
-    const location = useLocation();
+   
     let history = useHistory();
-    const redirect_url = location?.state?.from?.pathname || '/home';
+     const location = useLocation();
+     const redirect_url = location?.state?.from?.pathname || '/home';
     console.log(redirect_url);
 
     useEffect(() => {
@@ -24,6 +25,7 @@ const Login = () => {
         loginUser(data.email, data.password);
         console.log(data, location, history);
         history.replace(redirect_url);
+       
     };
 
     // const handleSignIn = () => {

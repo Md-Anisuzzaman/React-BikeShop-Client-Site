@@ -5,27 +5,38 @@ import useAuth from '../Hooks/useAuth';
 const ManageOrders = () => {
     const { user } = useAuth();
 
-    const [orders, setOrders] = useState([]);
+    const [bookingOrders, setBookingOrders] = useState([]);
 
+    // useEffect(() => {
+    //     fetch(`https://morning-taiga-95639.herokuapp.com/myOrders/${user?.email}`)
+    //         .then((res) => res.json())
+    //         .then((data) => setBookingOrders(data));
+    // }, [user?.email]);
     useEffect(() => {
-        fetch(`https://morning-taiga-95639.herokuapp.com/myOrders/${user?.email}`)
+        fetch('https://morning-taiga-95639.herokuapp.com/allorders')
             .then((res) => res.json())
-            .then((data) => setOrders(data));
+            .then((data) => setBookingOrders(data));
     }, [user?.email]);
 
     const handleDelete = id => {
-        const url = `https://morning-taiga-95639.herokuapp.com/orders-delete/${id}`;
-        fetch(url, {
-            method: 'POST'
-        })
+        const proceed = window.confirm("Are you sure, You want to delete?")
+        if(proceed){
+            const url = `https://morning-taiga-95639.herokuapp.com/orders-delete/${id}`;
+            fetch(url, {
+                method: 'POST'
+            }) 
             .then(res => res.json())
             .then(data => {
-                fetch('https://morning-taiga-95639.herokuapp.com/orders')
-                    .then(res => res.json())
-                    .then(data => setOrders(data))
-                //console.log(data);
-            });
+                if(data.deletedCount>0){
+                                const remainingOrders = bookingOrders.filter(order=>order._id !== id);
+                                setBookingOrders(remainingOrders);
+                                console.log(data);
+                            }
+                });
+        }
+           
     }
+
     return (
         <div>
             <h2 className="mt-2">Manage Orders</h2>
@@ -42,7 +53,7 @@ const ManageOrders = () => {
                     </tr>
                 </thead>
                 {
-                    orders.map(order => (
+                    bookingOrders.map(order => (
                         <tbody key={order._id}>
                             <tr>
                                 <td style={{ 'color': 'black' }}>{order._id}</td>
@@ -62,4 +73,4 @@ const ManageOrders = () => {
     );
 };
 
-export default ManageOrders ;
+export default ManageOrders;

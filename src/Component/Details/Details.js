@@ -10,7 +10,7 @@ const Details = () => {
     const { productId } = useParams();
     //console.log(productId);
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data, e) => {
         data.email = user?.email;
@@ -21,7 +21,9 @@ const Details = () => {
         })
             .then((res) => res.json())
             .then((data) => console.log(data));
-        // console.log(data);
+        console.log(data);
+        reset();
+        window.confirm("Your order ready to placed,.. Are you agree?")
         e.preventDefault();
 
     };
@@ -55,7 +57,6 @@ const Details = () => {
                             className=" input-field w-100 p-2 m-2"
                             {...register("name")}
                             placeholder="Name"
-
                         />
 
                         <input
@@ -64,14 +65,12 @@ const Details = () => {
                             //{...register("email", { required: true })}
                             placeholder="Email"
                             defaultValue={user.email}
-
                         />
                         <input
                             className="input-field w-100 p-2 m-2 "
                             {...register("address")}
-                           // {...register("address", { required: true })}
+                            // {...register("address", { required: true })}
                             placeholder="Address"
-
                         />
 
                         <input
@@ -79,7 +78,7 @@ const Details = () => {
                             {...register("price")}
                             //{...register("price", { required: true })}
                             placeholder="Price"
-                            type="number"
+                            //type="number"
                             defaultValue={product.price}
 
                         />

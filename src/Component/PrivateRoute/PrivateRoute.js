@@ -10,7 +10,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     useEffect(() => {
         const redirect_url = location.pathname || '/home';
         //const redirect_url = '/home';
-        console.log(redirect_url, location, user);
+        //console.log(redirect_url, location, user);
         setRurl(redirect_url);
     }, [])
 

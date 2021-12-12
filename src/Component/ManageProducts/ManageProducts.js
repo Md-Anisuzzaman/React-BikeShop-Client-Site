@@ -26,7 +26,7 @@ const ManageProducts = () => {
     }
     return (
         <div>
-            <h2 className="mt-2">Manage Orders</h2>
+            <h2 className="mt-2">Manage Products</h2>
             <Table className="m-body mt-4" striped bordered hover>
                 <thead>
                     <tr>

@@ -16,7 +16,7 @@ const AddReview = () => {
     };
     return (
         <div>
-            <h2 className="mt-5  text-primary">Please Add Review</h2>
+            <h2 className="mt-5  text-primary">Add Your Review</h2>
             <div className=" w-25 m-auto mt-3">
                 <div className=" ">
                     <div className="">
@@ -24,18 +24,18 @@ const AddReview = () => {
                             <input
                                 className="{styles.input-field} p-2 m-2 w-100 "
                                 {...register("review")}
-                                placeholder="Please add review"
+                                placeholder="your comment"
                             />
                             <input
                                 className="{styles.input-field} p-2 m-2 w-100 "
                                 {...register("img")}
-                                placeholder="Image"
+                                placeholder="Your image"
                             />
 
                             <input
                                 className="{styles.input-field} w-100 p-2 m-2"
                                 {...register("ratings")}
-                                placeholder="Rating"
+                                placeholder="Input rating number"
 
                             />
                             <br />

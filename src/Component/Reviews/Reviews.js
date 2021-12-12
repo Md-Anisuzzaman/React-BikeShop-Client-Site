@@ -23,17 +23,11 @@ const Reviews = () => {
                                 </div>
                                 <div className="mt-2">
                                     <p>{review.review.slice(0, 100)}</p>
-                                    <Rating
+                                    <Rating className="mb-3"
                                         readonly
                                         initialRating={review.ratings}
-                                            emptySymbol ="far fa-star icon-color "
-                                           fullSymbol="fas fa-star icon-color"
-                                        
-                                        // emptySymbol="bi bi-star fs-5"
-                                        // fullSymbol="bi bi-star-fill text-warning fs-5"
-                                        // <i class="bi bi-star-fill"></i>
-                                        // <i class="bi bi-star"></i>
-
+                                        emptySymbol="far fa-star icon-color "
+                                        fullSymbol="fas fa-star icon-color"
                                     >
                                     </Rating>
                                 </div>
