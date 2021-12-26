@@ -20,7 +20,7 @@ const Login = () => {
     }, [user])
 
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit,reset } = useForm();
     const onSubmit = (data) => {
         loginUser(data.email, data.password);
         console.log(data, location, history);
@@ -36,6 +36,7 @@ const Login = () => {
                     name="email"
                     placeholder="Email"
                     type="email"
+                    autoComplete='off'
                     {...register("email", { required: true })}
                 />
                 <br />
@@ -44,6 +45,7 @@ const Login = () => {
                     name="password"
                     type="password"
                     placeholder="Password"
+                    autoComplete='off'
                     {...register("password", { required: true })}
                 />
                 <br />

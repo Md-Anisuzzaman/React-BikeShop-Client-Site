@@ -22,6 +22,8 @@ import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Product from './Component/Product/Product';
 import NotFound from './NotFound/NotFound';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -66,7 +68,7 @@ function App() {
               <Register></Register>
             </Route>
             <Route path="*">
-             <NotFound></NotFound>
+              <NotFound></NotFound>
             </Route>
             {/* <Route path="/footer">
               <Footer></Footer>

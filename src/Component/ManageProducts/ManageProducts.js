@@ -27,30 +27,32 @@ const ManageProducts = () => {
     return (
         <div>
             <h2 className="mt-2">Manage Products</h2>
-            <Table className="m-body mt-4" striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Product Name</th>
-                        <th>Address</th>
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                {
-                    products.map(product => (
-                        <tbody key={product._id}>
-                            <tr>
-                                <td style={{ 'color': 'black' }}>{product._id}</td>
-                                <td>{product.model}</td>
-                                <td>{product.address}</td>
-                                <td>${product.price}</td>
-                                <button className="btn btn-warning text-dark me-3">Accept</button>
-                                <button onClick={() => handleDelete(product._id)} className="btn btn-danger text-dark">Delete</button>
-                            </tr>
-                        </tbody>
-                    ))};
-            </Table>
+            <div className='table-responsive'>
+                <Table className="table m-body mt-4" striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th scope='col'>ID</th>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Address</th>
+                            <th scope='col'>Price</th>
+                            <th scope='col'>Action</th>
+                        </tr>
+                    </thead>
+                    {
+                        products.map(product => (
+                            <tbody key={product._id}>
+                                <tr>
+                                    <th scope='row' style={{ 'color': 'black' }}>{product._id}</th>
+                                    <td>{product.model}</td>
+                                    <td>{product.address}</td>
+                                    <td>${product.price}</td>
+                                    <button className="btn btn-warning text-dark me-3">Accept</button>
+                                    <button onClick={() => handleDelete(product._id)} className="btn btn-danger text-dark">Delete</button>
+                                </tr>
+                            </tbody>
+                        ))};
+                </Table>
+            </div>
 
         </div>
     );

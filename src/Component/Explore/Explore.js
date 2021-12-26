@@ -20,7 +20,7 @@ const Explore = () => {
                         <div className="col-md-3" key={bike.id}>
                             <div className="cart explore-cart mt-5">
                                 <div>
-                                    <img className="img-wrap" src={bike.img} alt="" />
+                                    <img className="img-fluid img-wrap" src={bike.img} alt="" />
                                 </div>
                                 <div className="mt-2">
                                     <h5>Model: {bike.model}</h5>
