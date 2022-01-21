@@ -1,6 +1,6 @@
 React BuyBike Project<br>
 
-Project-Live-Link : https://zen-liskov-1aaaa1.netlify.app/
+Project-Live-Link : https://tender-lichterman-7fc81d.netlify.app/
 
 <h2>Project-Description:</h2> 
 
