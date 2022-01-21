@@ -11,7 +11,8 @@ const About = () => {
                         which contains our luggage.Village doctors and mail carrier use it for their service. Therefore, the bicycle is the very beneficial and useful vehicle, which makes no harm to our environment.</p>
                 </div>
                 <div className="col-md-6">
-                    <img className="pt-5 pb-5 w-100" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/harley-davidson-wdc9ZAiwBB4-un_0.jpeg?DsrBQBWzC_rQTNCFW1F4wTzNTPuprK92&size=770:433" alt="" />
+                    <img className="pt-5 mt-3 pb-5 w-100" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201908/harley-davidson-wdc9ZAiwBB4-un_0.jpeg?DsrBQBWzC_rQTNCFW1F4wTzNTPuprK92&size=770:433" alt="" />
+
                 </div>
             </div>
 

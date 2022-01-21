@@ -18,12 +18,12 @@ const Product = () => {
 
             <div className="row">
 
-                <h1 className="m-3">Our Collections</h1>
+                <h1 className="mt-5">Our Collections</h1>
                 {
                     // Using-map-function-to-show-data-in-cart
 
                     products.map((product, index) => index < 6 &&
-                        <div className="col-md-3" key={product.id}>
+                        <div className="col-md-3 mt-3" key={product.id}>
                             <div className="cart poduct-cart mt-4 mb-2">
                                 <div>
                                     <img className="img-wraping" src={product.img} alt="" />

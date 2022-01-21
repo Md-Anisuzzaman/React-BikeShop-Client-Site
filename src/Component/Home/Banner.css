@@ -1,3 +1,51 @@
- /* .bg-body{
-    background-image: url("https://www.padgettsmotorcycles.com/wp-content/uploads/2020/12/suzuki-pageheader-fullwidth-4-1.jpg");
-} */
+
+.banner-body{
+    /* background-image: url(../../Images/banner.jpg);
+    height: 500px;
+    background-size: cover;  */
+    display: flex;
+    align-items: center;
+    background-color:rgb(233, 218, 218);
+    /* border: 1px solid;
+    box-shadow: 5px 5px 5px 5px; */
+    box-shadow: 500px;
+}
+
+.h2-text{
+ font-family: 'Poppins', sans-serif;
+}
+
+.h3-text{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 66, 66);
+}
+
+.span-color{
+color: tomato;
+}
+
+.text-content{
+    padding-left: 50px;
+}
+
+.image-body{
+   width: 100%;
+   padding: 20px;
+   margin-bottom: 25px;
+}
+
+@media (min-width:350px) and  (max-width:767px){
+  .banner-body{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-right: 30px;
+  }  
+
+  .h2-text{
+      margin-top: 50px;
+  }
+
+  
+}
