@@ -3,13 +3,22 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import "./Header.css";
 import useAuth from '../Hooks/useAuth';
+import logo_bike from "../../Images/bike-logo.png"
 
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        <Navbar bg="dark" variant="dark" expand="sm">
+        <div>
+
+            <div className="helloBike">
+                <p><i className="fa-solid fa-phone"></i> 001697889</p>
+                <p className='text-danger'>BuyBike</p>
+                <p><i className="fa-solid fa-house-user"></i> Dhaka,Bangladesh</p>
+            </div>
+            
+        <Navbar className='navbar-start' bg="" variant="dark" expand="sm">
             <Container>
-                <Navbar.Brand className='font-style text-danger fs-3' style={{ fontSize: "22px" }}>BuyBike</Navbar.Brand>
+                <Navbar.Brand className='font-style text-danger fs-3' style={{ fontSize: "22px" }}> <img className='bike-logo' src={logo_bike} alt=""/> </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav className='right-side'>
@@ -18,6 +27,7 @@ const Header = () => {
                         <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/explore">Explore</NavLink>
                         {/* <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/addproduct">AddProduct</NavLink> */}
                         <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/dashboard">Dashboard</NavLink>
+                        {/* <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/test">Test</NavLink> */}
                         {
                             user?.email ?
                                 <div style={{ marginTop: '3px' }}>
@@ -33,6 +43,9 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
+        
+        </div>
     );
 };
 

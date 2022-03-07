@@ -3,6 +3,27 @@
     margin-left: 7px;
 } */
 
+.helloBike{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-style: italic;
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.746);
+    /* font-weight: 700; */
+    padding-top: 10px;
+}
+
+.navbar-start{
+    background-color: #009688;
+
+}
+.bike-logo{
+width: 100px;
+
+}
+
 .font-style{
     font-family: 'Poppins', sans-serif;
     /* font-size: 20px; */
@@ -10,7 +31,8 @@
 }
 
 .right-side{
-    margin-left:60px;
+    margin-left:220px;
+   
 }
 
 .log-style{

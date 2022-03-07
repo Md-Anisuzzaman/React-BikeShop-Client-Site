@@ -2,6 +2,7 @@ import React from 'react';
 import './Banner.css'
 import bg from '../../Images/banner-bike-removebg-preview.png';
 
+
 const Banner = () => {
     return (
         <div className="banner-body">
@@ -15,16 +16,16 @@ const Banner = () => {
                 <br/>
                 </h2>
             </div> */}
-            <div class="text-content">
-                <h1 className='h2-text text-success'><span className='span-color'>Enjoy</span> your stylish bike
+            <div className="text-content">
+                {/* <h1 className='h2-text text-success'><span className='span-color'>Enjoy</span> your stylish bike
                     <br />
-                </h1>
+                </h1> */}
                 <h3 className='h3-text'>A long ride can clear your mind, restore your faith and use up a lot.</h3>
                 <p>Life without a motorcycle is just life.
                     live to Ride, ride to live. <br /> No matter how bad your day is your bike will always make you feel better.</p>
             </div>
 
-            <div class="image-body">
+            <div className="image-body">
                 <img className='w-75' src={bg} alt="" />
                 {/* <img className='w-75' src="https://static.langimg.com/thumb/msid-62693385,width-1200,height-900,resizemode-75/navbharat-times.jpg" alt="" /> */}
             </div>

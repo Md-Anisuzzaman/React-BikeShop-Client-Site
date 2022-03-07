@@ -1,23 +1,35 @@
+*{
+    font-family: 'Poppins', sans-serif;
 
+}
 .banner-body{
     /* background-image: url(../../Images/banner.jpg);
     height: 500px;
     background-size: cover;  */
     display: flex;
     align-items: center;
-    background-color:rgb(233, 218, 218);
+    background-color:rgb(231 255 34 / 45%);
     /* border: 1px solid;
     box-shadow: 5px 5px 5px 5px; */
     box-shadow: 500px;
+    /* background-image: url('https://www.pngitem.com/pimgs/m/21-218707_wave-png-for-website-transparent-png.png'); */
+    background-image: url("../../Images/wave-removebg-preview.png");
+    /* background-position: right center; */
+    background-position:center bottom;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 111px);
+    padding-bottom: 60px;
 }
 
-.h2-text{
- font-family: 'Poppins', sans-serif;
-}
-
-.h3-text{
+.h3-text {
+    margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
     color: rgb(20, 66, 66);
+    text-align: left;
+    line-height: 130%;
 }
 
 .span-color{
@@ -26,12 +38,25 @@ color: tomato;
 
 .text-content{
     padding-left: 50px;
+    font-weight: 600;
+}
+.text-content p{
+
+    font-size: 15px;
+    text-align: left;
+
+
 }
 
 .image-body{
    width: 100%;
-   padding: 20px;
-   margin-bottom: 25px;
+   /* padding: 20px;
+   margin-bottom: 25px; */
+}
+
+.wave-image{
+
+
 }
 
 @media (min-width:350px) and  (max-width:767px){
