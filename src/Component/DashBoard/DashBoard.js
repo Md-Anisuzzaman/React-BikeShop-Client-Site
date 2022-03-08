@@ -32,37 +32,37 @@ const DashBoard = () => {
 
     return (
         <div>
-            <div className="row">
+            <div className="row gx-0">
                 <div className="col-md-3 ">
                     <div className="dashboard-body">
-                        <h4 className="text-success mb-5">Users Dashboard Menue</h4>
-                        {/* <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addproduct`}>
+                        <h5 className="text-success py-2 mb-3">Users Dashboard Menue</h5>
+                        {/* <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addproduct`}>
                             <li className="dashboard-menu">AddProduct</li>
                         </Link> */}
-                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/myorders`}>
-                            <li className="dashboard-menu">MyOrders</li>
+                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/myorders`}>
+                            <li className="dashboard-menu"><i className="fa-brands fa-first-order"></i> MyOrders</li>
                         </Link>
-                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addreview`}>
+                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addreview`}>
                             <li className="dashboard-menu">Add Review</li>
                         </Link>
-                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/pay`}>
+                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/pay`}>
                             <li className="dashboard-menu">Pay</li>
                         </Link>
 
                         <div className="admin-dashboard">
-                            <h4 className="text-danger mt-5 mb-5">Admin Dashboard Menue</h4>
+                            <h5 className="text-danger py-2 mt-3">Admin Dashboard Menue</h5>
                             {
                                 isAdmin && (
 
-                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addproduct`}>
-                                        <li className="dashboard-menu">Add Product</li>
+                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addproduct`}>
+                                        <li className="dashboard-menu"><i class="fa-brands fa-product-hunt"></i> Add Product</li>
                                     </Link>
                                 )
                             }
 
                             {/* {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/makeAdmin`}>
+                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/makeAdmin`}>
                                         <li className="dashboard-menu">Make Admin</li>
                                     </Link>
                                 )
@@ -70,21 +70,21 @@ const DashBoard = () => {
 
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/manageorders`}>
-                                        <li className="dashboard-menu">Manage All Orders</li>
+                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/manageorders`}>
+                                        <li className="dashboard-menu"><i className="fa-brands fa-first-order"></i> Manage All Orders</li>
                                     </Link>
                                 )
                             }
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/manageproducts`}>
+                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/manageproducts`}>
                                         <li className="dashboard-menu">Manage All Products</li>
                                     </Link>
                                 )
                             }
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/allusers`}>
+                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/allusers`}>
                                         <li className="dashboard-menu">Create Admin</li>
                                     </Link>
                                 )
@@ -93,7 +93,25 @@ const DashBoard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-9">
+                <div className="col-md-9 table-bg">
+                    <div className='dash-card'>
+                        <div className='dash-card-child-1'>
+                            <h4>5649989</h4>
+                            <p>Revenue</p>
+                        </div>
+                        <div className='dash-card-child-2'>
+                            <h4>5649</h4>
+                            <p>Liability</p>
+                        </div>
+                        <div className='dash-card-child-3'>
+                            <h4>9949989</h4>
+                            <p>Sell</p>
+                        </div>
+                        <div className='dash-card-child-4'>
+                            <h4>9989</h4>
+                            <p>Total Order</p>
+                        </div>
+                    </div>
                     <Switch>
                         <Route exact path={`${path}/addproduct`}>
                             <AddProduct></AddProduct>

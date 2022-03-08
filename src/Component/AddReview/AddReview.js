@@ -18,32 +18,31 @@ const AddReview = () => {
     };
     return (
         <div>
-            <h2 className="mt-5  text-primary">Add Your Review</h2>
-            <div className=" w-25 m-auto mt-3">
-                <div className=" ">
-                    <div className="">
-                        <form onSubmit={handleSubmit(onSubmit)}>
+            <h2 className="mt-5 text-primary">Add Your Review</h2>
+            <div className="">
+                <div className="w-50 m-auto mt-3">
+                    <div className=" p-5 mb-5 shadow bg-secondary">
+                        <form className=" form-login w-100" onSubmit={handleSubmit(onSubmit)}>
                             <input
-                                className="{styles.input-field} p-2 m-2 w-100 "
+                                className="{styles.input-field} form-control mb-3 w-100 "
                                 {...register("review")}
                                 placeholder="your comment"
                             />
                             <input
-                                className="{styles.input-field} p-2 m-2 w-100 "
+                                className="{styles.input-field} form-control mb-3 w-100"
                                 {...register("img")}
                                 placeholder="Your image"
                             />
 
                             <input
-                                className="{styles.input-field} w-100 p-2 m-2"
+                                className="{styles.input-field} form-control mb-3 w-100"
                                 {...register("ratings")}
                                 placeholder="Input rating number"
 
                             />
                             <br />
-
                             <input
-                                className="btn btn-info mt-5 mb-5 w-50"
+                                className="btn btn-info w-50"
                                 type="submit"
                                 value="Add Review"
                             />

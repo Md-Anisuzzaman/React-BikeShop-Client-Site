@@ -3,15 +3,31 @@
 } 
 
 .poduct-cart{
-    background-color: #0f131c;
-    height: 380px;
-    /* border: 1px solid cyan; */
-    color: white;
+    background-color: #ffff;
+    border: 1px solid gray;
+    width: 70%;
+    height: 90%;
+    margin-left: 70px;
+    /* background-color:rgb(66 193 187 / 15%); */
+    /* background-color:rgba(66, 143, 193, 0.44); */
+    border-radius: 10px;
+    box-shadow: 100px;
+    box-shadow: 10px 10px 10px 5px rgb(158, 157, 157) ;
 }
 
+
+
 .img-wraping{
-    height: 210px;
-    width: 85%;
-    /* overflow-y: hidden; */
-    object-fit: contain;
+    margin-top: 10px;
+    height: 200px;
+    width: calc(100% - 20px);
+}
+
+.bottom-div{
+    background-color:#fa5c5c;
+    border-radius: 5px;
+}
+
+.bottom-div h5{
+padding: 8px;
 }

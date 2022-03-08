@@ -1,8 +1,8 @@
 // import React, { useEffect } from 'react';
-// import './Test.css'
-// import login_avatar from '../../Images/avatar1.svg';
-// // import login_wave from '../../Images/wave1.png';
-// import login_bg from '../../Images/login-bg.svg'
+// // import './Test.css'
+// import register_avatar from '../../Images/avatarR.svg';
+// import register_wave from '../../Images/waveR.png';
+// // import login_bg from '../../Images/login-bg.svg'
 // // import { Link } from 'react-router-dom';
 // import { useHistory } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
@@ -34,40 +34,34 @@
 //     };
 //     return (
 //         <div>
-//             <div>
-//                 {/* <img ClassName="wave" src={login_wave} /> */}
-//                 <div className="login-container">
-//                     <div className="img">
-//                         <img src={login_bg} />
-//                     </div>
-//                     <div className="login-content">
-//                         <form onSubmit={handleSubmit}>
-//                             <img src={login_avatar} />
-//                             <h2 className="title">Welcome</h2>
-//                             <NavLink style={{ textDecoration: 'none', fontSize: '25px' }} to='/register'>Not Yet Registered? Please Register</NavLink>
-//                             <div className="input-div one">
-//                                 <div className="i">
-//                                     <i className="fas fa-user"></i>
-//                                 </div>
-//                                 <div className="div">
-//                                     <h5>Username</h5>
-//                                     <input type="text" className="input" />
-//                                 </div>
+//             <img class="wave" src={register_wave} />
+//             <div class="container">
+//                 <div class="img"></div>
+//                 <div class="login-content">
+//                     <form action="index.html">
+//                         <img src={register_avatar} />
+//                         <h2 class="title">Howdy!!</h2>
+//                         <div class="input-div one">
+//                             <div class="i">
+//                                 <i class="fas fa-user"></i>
 //                             </div>
-//                             <div className="input-div pass">
-//                                 <div className="i">
-//                                     <i className="fas fa-lock"></i>
-//                                 </div>
-//                                 <div className="div">
-//                                     <h5>Password</h5>
-//                                     <input type="password" className="input" />
-//                                 </div>
+//                             <div class="div">
+//                                 <h5>Username</h5>
+//                                 <input type="text" class="input" />
 //                             </div>
-//                             <a className="anchore-tag" href="#">Forgot Password?</a>
-//                             <input type="submit" className="submit-btn" value="Login" />
-//                             <button className='reset' type="reset">Reset</button>
-//                         </form>
-//                     </div>
+//                         </div>
+//                         <div class="input-div pass">
+//                             <div class="i">
+//                                 <i class="fas fa-lock"></i>
+//                             </div>
+//                             <div class="div">
+//                                 <h5>Password</h5>
+//                                 <input type="password" class="input" />
+//                             </div>
+//                         </div>
+//                         <a href="#">Forgot Password?</a>
+//                         <input type="submit" class="btn" value="Login" />
+//                     </form>
 //                 </div>
 //             </div>
 

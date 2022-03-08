@@ -1,11 +1,84 @@
+*{
+  font-family: 'sans-serif','poppins';
+}
+
 .dashboard-body {
-    background-color: whitesmoke ;
-    height: 100vh;
+    background-color: rgb(6, 25, 65) ;
+    min-height: 100vh;
+    height: 100%;
     border-right: 2px solid rgb(246, 195, 195);
     font-size: large;
     cursor: pointer;
   }
   .dashboard-menu {
+    text-align: start;
+    color: #fff;
     list-style: none;
     margin-top: 10px;
+    padding-left: 60px;
+    /* #8bc34a */
   }
+
+  .dashboard-menu:hover{
+    color: goldenrod;
+  }
+
+  .table-bg{
+    /* background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+
+  .icon-color{
+
+    color: #fff;
+
+  }
+
+  .dash-card{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px 10px rgb(251, 145, 145);
+    margin-bottom: 30px;
+  }
+
+.dash-card-child-1{
+  /* border: 1px solid gray; */
+  width: 50%;
+  padding: 10px;
+  background-color: #4A235A ;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.dash-card-child-2{
+  /* border: 1px solid gray; */
+  width: 50%;
+  padding: 10px;
+  background-color: #DE3163  ;
+  color: #fff;
+  margin-right: 5px;
+}
+.dash-card-child-3{
+  width: 50%;
+  /* border: 1px solid gray; */
+  padding: 10px;
+  background-color: #3E30AD  ;
+  color: #fff;
+  margin-right: 5px;
+}
+.dash-card-child-4{
+  /* border: 1px solid gray; */
+  width: 50%;
+  padding: 10px;
+  background-color: #1792C0;
+  color: #fff;
+  margin-right: 5px;
+}
+

@@ -46,7 +46,7 @@ const ManageOrders = () => {
                         <tr>
                             <th scope='col'>ID</th>
                             <th scope='col'>Product</th>
-                            <th scope='col'>Name</th>
+                            {/* <th scope='col'>Name</th> */}
                             <th scope='col'>Email</th>
                             <th scope='col'>Address</th>
                             <th scope='col'>Price</th>
@@ -59,7 +59,7 @@ const ManageOrders = () => {
                                 <tr>
                                     <th scope='row' style={{ 'color': 'black' }}>{order._id}</th>
                                     <td>{order.model}</td>
-                                    <td>{order.name}</td>
+                                    {/* <td>{order.name}</td> */}
                                     <td>{order.email}</td>
                                     <td>{order.address}</td>
                                     <td>${order.price}</td>

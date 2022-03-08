@@ -23,16 +23,19 @@ const Product = () => {
                     // Using-map-function-to-show-data-in-cart
 
                     products.map((product, index) => index < 6 &&
-                        <div className="col-md-3 mt-3" key={product.id}>
+                        <div className="col-md-4 mt-3" key={product.id}>
                             <div className="cart poduct-cart mt-4 mb-2">
-                                <div>
+                                <div className='div-image'>
                                     <img className="img-wraping" src={product.img} alt="" />
                                 </div>
                                 <div className="mt-2">
                                     <h5>Model:  {product.model}</h5>
                                     <p>Price:  ${product.price}</p>
-                                    <Link to={`/products/${product._id}`}> <button className="btn btn-warning">Details</button></Link>
+                                    <Link to={`/products/${product._id}`}> <button className="btn btn-warning w-100 mb-2">Details</button></Link>
                                     {/* <p className="p-4 text-justify"><span className="fw-bold">Details:</span> {service.details}</p> */}
+                                    <div className='bottom-div'>
+                                        <h5 className='text-light'>Avaiable</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
