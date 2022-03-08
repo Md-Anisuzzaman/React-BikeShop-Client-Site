@@ -20,7 +20,7 @@ const Banner = () => {
                 {/* <h1 className='h2-text text-success'><span className='span-color'>Enjoy</span> your stylish bike
                     <br />
                 </h1> */}
-                <h3 className='h3-text'>A long ride can clear your mind, restore your faith and use up a lot.</h3>
+                <h3 className='h3-text'>A long ride can clear your mind, restore your faith</h3>
                 <p>Life without a motorcycle is just life.
                     live to Ride, ride to live. <br /> No matter how bad your day is your bike will always make you feel better.</p>
             </div>

@@ -6,7 +6,7 @@
     background-color: #ffff;
     border: 1px solid gray;
     width: 70%;
-    height: 90%;
+    height: 92%;
     margin-left: 70px;
     /* background-color:rgb(66 193 187 / 15%); */
     /* background-color:rgba(66, 143, 193, 0.44); */
@@ -23,11 +23,20 @@
     width: calc(100% - 20px);
 }
 
-.bottom-div{
-    background-color:#fa5c5c;
-    border-radius: 5px;
+.product-btn{
+
+    background-color: #009688 ;
+    color: #fff;
+
 }
 
-.bottom-div h5{
-padding: 8px;
+.bottom-div{
+    /* background-color:#fa5c5c; */
+    background-color:#535050;
+    border-radius: 5px;
+   
+}
+
+.bottom-div p{
+    padding: px;
 }

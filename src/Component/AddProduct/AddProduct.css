@@ -4,5 +4,10 @@
     border-bottom: 2px solid gray;
     margin-top: 10px;
     outline: none;
+    
+  }
+
+  .ad-fr-box{
+    border-radius: 10px;
   }
   

@@ -24,33 +24,33 @@ const AddProduct = () => {
 
         <div>
             <h1 className="text-center text-success mt-5 mb-5">Add Product Which You like Most</h1>
-            <div className=" w-25 m-auto mt-3">
-                <div className=" ">
-                    <div className="">
-                        <form onSubmit={handleSubmit(onSubmit)}>
+            <div className=" w-50 m-auto mt-3">
+                <div className="">
+                    <div className=" p-5 mb-5 ad-fr-box shadow bg-secondary">
+                        <form className=" form-login w-100" onSubmit={handleSubmit(onSubmit)}>
                             <input
-                                className="input-field p-2 m-2 w-100 "
+                                className="input-field form-control p-2 m-2 w-100 "
                                 {...register("model")}
                                 placeholder="Model"
 
                             />
 
                             <input
-                                className=" input-field w-100 p-2 m-2"
+                                className=" input-field form-control w-100 p-2 m-2"
                                 {...register("details")}
                                 placeholder="Details"
 
                             />
 
                             <input
-                                className="input-field w-100 p-2 m-2 "
+                                className="input-field form-control w-100 p-2 m-2 "
                                 {...register("img", { required: true })}
                                 placeholder="Image link"
 
                             />
 
                             <input
-                                className="input-field w-100 p-2 m-2"
+                                className="input-field form-control w-100 p-2 m-2"
                                 {...register("price", { required: true })}
                                 placeholder="Price"
                                 type="number"
@@ -60,7 +60,7 @@ const AddProduct = () => {
                             <br />
 
                             <input
-                                className="btn btn-info mt-5 mb-5 w-50"
+                                className="btn btn-info w-50"
                                 type="submit"
                                 value="Add Product"
                             />

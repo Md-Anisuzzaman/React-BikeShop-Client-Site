@@ -44,7 +44,7 @@ const Details = () => {
                     <h5>Price: ${product.price}</h5>
                 </div>
                 <div className="col-md-5 border border-dark">
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form className='w-100' onSubmit={handleSubmit(onSubmit)}>
                         <input
                             className="input-field p-2 m-2 w-100 "
                             {...register("model")}

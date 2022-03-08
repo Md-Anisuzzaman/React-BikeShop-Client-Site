@@ -18,16 +18,16 @@ const Reviews = () => {
                     reviews.map(review =>
                         <div className="col-md-3" key={review.id}>
                             <div className="cart review-cart m-3 mt-5">
-                                {/* <div>
-                                    <img className="img-fluid  w-100 p-2" src={review.img} alt="" />
-                                </div> */}
-                                <div className=" review-text mt-2">
-                                    <p>{review.review.slice(0, 100)}</p>
-                                    <Rating className="mb-3"
+                                <div>
+                                    <img className="w-50 p-2" src={review.img} alt="" />
+                                </div>
+                                <div className=" review-text pb-3">
+                                    <p className=''>"{review.review.slice(0, 100)}"</p>
+                                    <Rating
                                         readonly
                                         initialRating={review.ratings}
-                                        emptySymbol="far fa-star icon-color "
-                                        fullSymbol="fas fa-star icon-color"
+                                        emptySymbol="far fa-star star-color "
+                                        fullSymbol="fas fa-star star-color"
                                     >
                                     </Rating>
                                 </div>

@@ -3,7 +3,8 @@
 }
 
 .dashboard-body {
-    background-color: rgb(6, 25, 65) ;
+    /* background-color: rgb(6, 25, 65); */
+    background-color: rgb(221, 224, 230);
     min-height: 100vh;
     height: 100%;
     border-right: 2px solid rgb(246, 195, 195);
@@ -12,7 +13,7 @@
   }
   .dashboard-menu {
     text-align: start;
-    color: #fff;
+    color:black;
     list-style: none;
     margin-top: 10px;
     padding-left: 60px;
@@ -20,7 +21,7 @@
   }
 
   .dashboard-menu:hover{
-    color: goldenrod;
+    color: rgb(44, 55, 214);
   }
 
   .table-bg{
@@ -39,17 +40,17 @@
   }
 
   .dash-card{
-    padding-top: 5px;
+    background-color: rgb(211, 189, 189);
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     box-shadow: 5px 5px 5px 10px rgb(251, 145, 145);
-    margin-bottom: 30px;
+    margin: 10px 30px;
   }
 
-.dash-card-child-1{
-  /* border: 1px solid gray; */
+/* .dash-card-child-1{
   width: 50%;
   padding: 10px;
   background-color: #4A235A ;
@@ -58,7 +59,6 @@
 }
 
 .dash-card-child-2{
-  /* border: 1px solid gray; */
   width: 50%;
   padding: 10px;
   background-color: #DE3163  ;
@@ -67,18 +67,26 @@
 }
 .dash-card-child-3{
   width: 50%;
-  /* border: 1px solid gray; */
   padding: 10px;
   background-color: #3E30AD  ;
   color: #fff;
   margin-right: 5px;
 }
 .dash-card-child-4{
-  /* border: 1px solid gray; */
   width: 50%;
   padding: 10px;
   background-color: #1792C0;
   color: #fff;
   margin-right: 5px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .dash-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 

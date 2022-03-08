@@ -54,24 +54,24 @@ const Login = () => {
                     <div className="login-content">
                         <form>
                             <img src={login_avatar} />
-                            <h2 className="title">Welcome</h2>
-                            <NavLink style={{ textDecoration: 'none', fontSize: '15px' }} to='/register'>Not Yet Registered? Please Register</NavLink>
+                            <h3 className="title">Login</h3>
+                            <NavLink  style={{ textDecoration: 'none', fontSize: '15px',textAlign:'center',marginBottom:'10px',color:"blue" }} to='/register'>Not Yet Registered? Please Register</NavLink>
                             <div className="input-div one">
-                                <div className="i">
+                                <div className="i-icon">
                                     <i className="fas fa-user"></i>
                                 </div>
                                 <div className="div">
-                                    <h5>User email</h5>
-                                    <input onChange={(e)=>setEmail(e.target.value)} type="email" className="input" />
+                                    {/* <h5>User email</h5> */}
+                                    <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='user email' className="input" />
                                 </div>
                             </div>
                             <div className="input-div pass">
-                                <div className="i">
+                                <div className="i-icon">
                                     <i className="fas fa-lock"></i>
                                 </div>
                                 <div className="div">
-                                    <h5>Password</h5>
-                                    <input  onChange={(e)=>setPassword(e.target.value)} type="password" className="input" />
+                                    {/* <h5>Password</h5> */}
+                                    <input  onChange={(e)=>setPassword(e.target.value)} type="password" placeholder='User password' className="input" />
                                 </div>
                             </div>
                             <a className="anchore-tag" href="#">Forgot Password?</a>

@@ -21,7 +21,7 @@ const AddReview = () => {
             <h2 className="mt-5 text-primary">Add Your Review</h2>
             <div className="">
                 <div className="w-50 m-auto mt-3">
-                    <div className=" p-5 mb-5 shadow bg-secondary">
+                    <div className=" p-5 mb-5 ad-fr-box shadow bg-secondary">
                         <form className=" form-login w-100" onSubmit={handleSubmit(onSubmit)}>
                             <input
                                 className="{styles.input-field} form-control mb-3 w-100 "

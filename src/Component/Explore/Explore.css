@@ -21,7 +21,7 @@
     background-color: #ffff;
     border: 1px solid gray;
     width: 70%;
-    height: 85.5%;
+    height: 90%;
     margin-left: 70px;
     /* background-color:rgb(66 193 187 / 15%); */
     /* background-color:rgba(66, 143, 193, 0.44); */
@@ -52,11 +52,11 @@
  }
 
  .bottom-div{
-     background-color:#fa5c5c;
+     background-color:#535050;;
      border-radius: 5px;
  }
 
- .bottom-div h5{
- padding: 8px;
+ .bottom-div p{
+ padding: 20px;
  }
  

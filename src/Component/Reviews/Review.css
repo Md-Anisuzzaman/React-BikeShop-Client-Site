@@ -1,19 +1,20 @@
 .review-cart{
-    /* border: 1px solid gray; */
     text-align: center;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px 5px rgb(126, 140, 156);
+    border-radius: 5px;
+    padding: 10px;
+    height: 80%;
 }
 
-.icon-color{
+.star-color{
     color: rgb(250, 185, 19);
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .review-text{
-    /* border:1px solid gray; */
     font-family: 'sans-serif','poppins';
     background-color: #ffff;
     font-style: italic;
-    box-shadow: 5px 5px 5px 5px rgb(81, 134, 195);
-    border-radius: 7px;
 }
 

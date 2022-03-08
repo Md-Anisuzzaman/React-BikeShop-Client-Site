@@ -31,10 +31,10 @@ const Product = () => {
                                 <div className="mt-2">
                                     <h5>Model:  {product.model}</h5>
                                     <p>Price:  ${product.price}</p>
-                                    <Link to={`/products/${product._id}`}> <button className="btn btn-warning w-100 mb-2">Details</button></Link>
+                                    <Link to={`/products/${product._id}`}> <button className="btn product-btn w-100 mb-2">Details</button></Link>
                                     {/* <p className="p-4 text-justify"><span className="fw-bold">Details:</span> {service.details}</p> */}
                                     <div className='bottom-div'>
-                                        <h5 className='text-light'>Avaiable</h5>
+                                        <p className='text-light'>Available</p>
                                     </div>
                                 </div>
                             </div>
