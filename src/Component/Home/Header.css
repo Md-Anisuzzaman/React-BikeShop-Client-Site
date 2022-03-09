@@ -12,16 +12,15 @@
     background-color: aliceblue;
     color: rgba(0, 0, 0, 0.746);
     /* font-weight: 700; */
-    padding-top: 10px;
+    padding-top: 5px;
+    margin: 0;
 }
-
 .navbar-start{
     background-color: #009688;
 
 }
 .bike-logo{
 width: 100px;
-
 }
 
 .font-style{
@@ -31,18 +30,38 @@ width: 100px;
 }
 
 .right-side{
-   margin: auto;
+  padding-left: 250px;
    
 }
 
 .log-style{
     font-family: 'Poppins', sans-serif; 
     text-align: center; 
+    margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
     .right-side {
-     margin-right: 100px;
+     margin-right: 110px;
+     display: flex;
+     flex-direction:column;
+     align-items: flex-start;
+     margin-left: 100px;
+      
+    }
+
+    .log-style{
+        margin: 0;
+    }
+
+    .helloBike{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buyBuke{
+        margin-top: 6px;
     }
   }
 

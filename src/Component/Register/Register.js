@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
 
-    const [name,setName]=useState('');
-    const [email,setEmail]=useState('');
-    const [password,setPassword]=useState('');
+    const [name,setName]=useState(' ');
+    const [email,setEmail]=useState(' ');
+    const [password,setPassword]=useState(' ');
 
     const { user, registerUser } = useAuth();
 
@@ -78,7 +78,7 @@ const Register = () => {
                             </div>
                         </div>
                         <Link to="/fr">Forgot Password?</Link>
-                        <input onClick={(e) => handleSubmit(e,name,email,password)} type="submit" className="register-btn" value="Register" />
+                        <button onClick={(e) => handleSubmit(e,name,email,password)} type="submit" className="register-btn" value="Register">Register</button>
                     </form>
                 </div>
             </div>

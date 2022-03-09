@@ -12,7 +12,7 @@ const Header = () => {
 
             <div className="helloBike">
                 <p><i className="fa-solid fa-phone"></i> 001697889</p>
-                <p className='text-danger'>BuyBike</p>
+                <p className='text-danger buyBuke'>BuyBike</p>
                 <p><i className="fa-solid fa-house-user"></i> Dhaka,Bangladesh</p>
             </div>
 
@@ -24,6 +24,7 @@ const Header = () => {
                         <Nav className='right-side'>
                             <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/home">Home</NavLink>
                             <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/about">About</NavLink>
+                            <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/contact">Contact</NavLink>
                             <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/explore">Explore</NavLink>
                             {/* <NavLink style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px', }} to="/addproduct">AddProduct</NavLink> */}
                             <NavLink className='font-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/dashboard">Dashboard</NavLink>
@@ -33,7 +34,7 @@ const Header = () => {
                                     <div style={{ marginTop: '3px' }}>
                                         {/* <span style={{ textDecoration: "none", color: 'yellow', fontSize: '20px', marginRight: '15px' }} >Sign in as: {user.email}</span> */}
                                         <span style={{ textDecoration: "none", color: 'yellow', fontSize: '15px', marginRight: '15px' }} >{user.email}</span>
-                                        <NavLink className='log-style' onClick={logOut} style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="logout">Logout</NavLink>
+                                        <NavLink className='log-style' onClick={logOut} style={{ textDecoration: "none", color: 'blue', fontSize: '23px', marginRight: '15px' }} to="logout">Logout</NavLink>
                                     </div>
 
                                     :

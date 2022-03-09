@@ -28,7 +28,6 @@ const DashBoard = () => {
                 }
             });
     }, [user?.email]);
-    console.log(isAdmin);
 
     return (
         <div>

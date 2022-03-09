@@ -11,8 +11,8 @@ import './Login.css';
 
 const Login = () => {
 
-    const [email,setEmail] = useState('');
-    const [password,setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     const { loginUser, user } = useAuth();
 
@@ -31,10 +31,10 @@ const Login = () => {
 
 
     // const { register, handleSubmit, reset } = useForm();
-    const handleSubmit = (e,email,password) => {
+    const handleSubmit = (e, email, password) => {
         e.preventDefault();
-        console.log(email,password);
-        loginUser(email,password);
+        console.log(email, password);
+        loginUser(email, password);
         history.replace(redirect_url);
     };
     // const handleSubmit = (data) => {
@@ -55,14 +55,14 @@ const Login = () => {
                         <form>
                             <img src={login_avatar} />
                             <h3 className="title">Login</h3>
-                            <NavLink  style={{ textDecoration: 'none', fontSize: '15px',textAlign:'center',marginBottom:'10px',color:"blue" }} to='/register'>Not Yet Registered? Please Register</NavLink>
+                            <NavLink style={{ textDecoration: 'none', fontSize: '15px', textAlign: 'center', marginBottom: '10px', color: "blue" }} to='/register'>Not Yet Registered? Please Register</NavLink>
                             <div className="input-div one">
                                 <div className="i-icon">
                                     <i className="fas fa-user"></i>
                                 </div>
                                 <div className="div">
                                     {/* <h5>User email</h5> */}
-                                    <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='user email' className="input" />
+                                    <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder='user email' className="input" />
                                 </div>
                             </div>
                             <div className="input-div pass">
@@ -71,11 +71,11 @@ const Login = () => {
                                 </div>
                                 <div className="div">
                                     {/* <h5>Password</h5> */}
-                                    <input  onChange={(e)=>setPassword(e.target.value)} type="password" placeholder='User password' className="input" />
+                                    <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder='User password' className="input" />
                                 </div>
                             </div>
                             <a className="anchore-tag" href="#">Forgot Password?</a>
-                            <input onClick={(e)=>handleSubmit(e,email,password)} type="submit" className="submit-btn" value="Login" />
+                            <input onClick={(e) => handleSubmit(e, email, password)} type="submit" className="submit-btn" value="Login" />
                             <button className='reset' type="reset">Reset</button>
                         </form>
                     </div>
