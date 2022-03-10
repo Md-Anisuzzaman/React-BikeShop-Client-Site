@@ -1,0 +1,14 @@
+ 
+@media(min-width:801px){
+    .ma-product-card{
+        display: none;
+      }
+
+ }
+
+@media (min-width:320px) and (max-width:800px){
+   .table-responsive{
+     display: none;
+   }
+  }
+  

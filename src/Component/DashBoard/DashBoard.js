@@ -10,6 +10,15 @@ import ManageProducts from '../ManageProducts/ManageProducts';
 import MyOrders from '../MyOrders/MyOrders';
 import Pay from '../Payment/Pay';
 import './DashBoard.css'
+import { FaBars} from "react-icons/fa";
+import { FaTimes} from "react-icons/fa";
+import { FaPhabricator} from "react-icons/fa";
+import { FaApplePay} from "react-icons/fa";
+import { FaBandcamp} from "react-icons/fa";
+import {FaStreetView} from "react-icons/fa";
+
+
+
 
 const DashBoard = () => {
 
@@ -34,26 +43,30 @@ const DashBoard = () => {
             <div className="row gx-0">
                 <div className="col-md-3 ">
                     <div className="dashboard-body">
-                        <h5 className="text-success py-2 mb-3">Users Dashboard Menue</h5>
+                        {/* <input type="checkbox" name="" id="check" />
+                        <label htmFor="check">
+                            <i id='bars'><FaBars/></i>
+                            <i id='close'><FaTimes/></i>
+                        </label> */}
+                        <h5 className="text-success fs-4 py-2 mb-3">Users Dashboard Menue</h5>
                         {/* <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addproduct`}>
                             <li className="dashboard-menu">AddProduct</li>
                         </Link> */}
-                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/myorders`}>
+                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/myorders`}>
                             <li className="dashboard-menu"><i className="fa-brands fa-first-order"></i> MyOrders</li>
                         </Link>
-                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addreview`}>
-                            <li className="dashboard-menu">Add Review</li>
+                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addreview`}>
+                            <li className="dashboard-menu"><FaPhabricator></FaPhabricator>Add Review</li>
                         </Link>
-                        <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/pay`}>
-                            <li className="dashboard-menu">Pay</li>
+                        <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/pay`}>
+                            <li className="dashboard-menu"><FaApplePay></FaApplePay> Pay</li>
                         </Link>
 
                         <div className="admin-dashboard">
                             <h5 className="text-danger py-2 mt-3">Admin Dashboard Menue</h5>
                             {
                                 isAdmin && (
-
-                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addproduct`}>
+                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/addproduct`}>
                                         <li className="dashboard-menu"><i class="fa-brands fa-product-hunt"></i> Add Product</li>
                                     </Link>
                                 )
@@ -69,22 +82,22 @@ const DashBoard = () => {
 
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/manageorders`}>
+                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/manageorders`}>
                                         <li className="dashboard-menu"><i className="fa-brands fa-first-order"></i> Manage All Orders</li>
                                     </Link>
                                 )
                             }
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/manageproducts`}>
-                                        <li className="dashboard-menu">Manage All Products</li>
+                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/manageproducts`}>
+                                        <li className="dashboard-menu"><FaBandcamp></FaBandcamp> Manage All Products</li>
                                     </Link>
                                 )
                             }
                             {
                                 isAdmin && (
-                                    <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/allusers`}>
-                                        <li className="dashboard-menu">Create Admin</li>
+                                    <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/allusers`}>
+                                        <li className="dashboard-menu mb-5"><FaStreetView></FaStreetView> Create Admin</li>
                                     </Link>
                                 )
                             }

@@ -34,11 +34,11 @@ const Header = () => {
                                     <div style={{ marginTop: '3px' }}>
                                         {/* <span style={{ textDecoration: "none", color: 'yellow', fontSize: '20px', marginRight: '15px' }} >Sign in as: {user.email}</span> */}
                                         <span style={{ textDecoration: "none", color: 'yellow', fontSize: '15px', marginRight: '15px' }} >{user.email}</span>
-                                        <NavLink className='log-style' onClick={logOut} style={{ textDecoration: "none", color: 'blue', fontSize: '23px', marginRight: '15px' }} to="logout">Logout</NavLink>
+                                        <NavLink className='log-style' onClick={logOut} style={{ textDecoration: "none", color: 'blue', fontSize: '20px', marginRight: '15px' }} to="logout">Logout</NavLink>
                                     </div>
 
                                     :
-                                    <NavLink className='log-style' style={{ textDecoration: "none", color: 'white', fontSize: '23px', marginRight: '15px' }} to="/login">Login</NavLink>
+                                    <NavLink className='log-style' style={{ textDecoration: "none", color: 'white', fontSize: '20px', marginRight: '15px' }} to="/login">Login</NavLink>
                             }
                         </Nav>
                     </Navbar.Collapse>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import './ManageProducts.css';
 
 const ManageProducts = () => {
 
@@ -10,7 +11,6 @@ const ManageProducts = () => {
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
-
     const handleDelete = id => {
         const url = `https://morning-taiga-95639.herokuapp.com/allproduct-delete/${id}`;
         fetch(url, {
@@ -26,8 +26,8 @@ const ManageProducts = () => {
     }
     return (
         <div>
-            <h2 className="mt-2">Manage Products</h2>
             <div className='table-responsive'>
+                <h2 className="mt-2">Manage Products</h2>
                 <Table className="table m-body mt-4" striped bordered hover>
                     <thead>
                         <tr>
@@ -54,6 +54,21 @@ const ManageProducts = () => {
                 </Table>
             </div>
 
+            <div className='ma-product-card'>
+                {
+                    products.map(product => (
+                        <h2 key={product._id}>
+                            <div className="border border-dark mt-3 mb-3 ">
+                                <p clasName='pr-3'style={{ 'color': 'black' }}>{product._id}</p>
+                                <p>Model:{product.model}</p>
+                                <p>Address: {product.address}</p>
+                                <p>Price: ${product.price}</p>
+                                <button className="btn btn-warning text-dark me-3">Accept</button>
+                                <button onClick={() => handleDelete(product._id)} className="btn btn-danger text-dark">Delete</button>
+                            </div>
+                        </h2>
+                    ))};
+            </div>
         </div>
     );
 };

@@ -59,18 +59,16 @@ color: tomato;
 
 }
 
-@media (min-width:350px) and  (max-width:767px){
+@media (min-width:320px) and  (max-width:768px){
   .banner-body{
-    display: flex;
+   display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   padding-right: 30px;
+   /* padding-right: 30px; */
   }  
-
-  .h2-text{
-      margin-top: 50px;
+  .text-content .h3-text{
+      padding-right: 20px;
   }
 
-  
 }

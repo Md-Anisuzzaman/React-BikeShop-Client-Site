@@ -17,13 +17,13 @@ const useFirebase = () => {
 
     const auth = getAuth();
     let history = useHistory();
-    //let location = useLocation();
-    //const redirect_url = location?.state?.from?.pathname || '/home';
+    // let location = useLocation();
+    // const redirect_url = location?.state?.from?.pathname || '/home';
 
 
-    const registerUser = (email, password) => {
+    const registerUser = (name,email, password) => {
 
-        createUserWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth,name,email,password)
             .then((result) => {
                 // Signed in 
                 const user = result.user;
@@ -53,7 +53,7 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
-            //history.replace(redirect_url);
+            // history.replace(redirect_url);
         }).catch((error) => {
             // An error happened.
         });

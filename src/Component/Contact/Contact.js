@@ -10,9 +10,11 @@ const Contact = () => {
     const handleContactForm = (e) => {
         emailjs.sendForm('service_s6y67zn', 'template_1d4buxu', e.target, 'user_p1GkQ1dbcf6tTyrgGbRtI')
             .then((result) => {
+                alert("Message Sent, We will get back to you shortly", result.text);
                 console.log(result.text);
                 setEmailSuccess(true);
             }, (error) => {
+                alert("An error occurred, Please try again", error.text);
                 console.log(error.text);
                 setEmailSuccess(false);
             });
@@ -37,20 +39,20 @@ const Contact = () => {
             }
                     <div class="cl-row">
                         <div ClassName="input-grou mb-5">
-                            <input className='in-put' type="text" placeholder='your Name' name='name' />
+                            <input className='in-put' type="text" placeholder='your Name' name='name' required />
                             {/* <label className='cl-label' htmlFor="name"><i class="fa-solid fa-user"></i> Your Name</label> */}
                         </div>
                         <div ClassName="input-grou">
-                            <input className='in-put' type="number" placeholder='Phone No.' name='phone' />
+                            <input className='in-put' type="number" placeholder='Phone No.' name='phone' required />
                             {/* <label className='cl-label' htmlFor="number"><i class="fas fa-phone-square-alt"></i> Phone No.</label> */}
                         </div>
                     </div>
                     <div ClassName="input-grou">
-                        <input className='in-put' type="email" placeholder='Your Email' name='email' />
+                        <input className='in-put' type="email" placeholder='Your Email' name='email' required />
                         {/* <label className='cl-label'  htmlFor="email"><i class="fa-regular fa-envelope"></i> Email</label> */}
                     </div>
                     <div ClassName="input-grou">
-                        <textarea className='in-put' placeholder='your Message' id="message" rows="8" name='message'></textarea>
+                        <textarea className='in-put' placeholder='your Message' id="message" rows="8" name='message' required></textarea>
                         {/* <label className='cl-label' htmlFor="message"><i class="fa-regular fa-comments"></i> Your Message</label> */}
                     </div>
                     <button className="cl-button" type="submit">Send <i class="fa-regular fa-paper-plane"></i></button>

@@ -29,10 +29,10 @@ const Register = () => {
 
     // const { register, handleSubmit } = useForm();
 
-    const handleSubmit = (e,name,email,password) => {
+    const handleSubmit = (e,email,password) => {
         e.preventDefault();
-        registerUser(name,email,password);
-        console.log(name,email,password);
+        registerUser(email,password);
+        console.log(email,password);
         history.replace(redirect_url);
         
     // const onSubmit = (data) => {
@@ -50,15 +50,14 @@ const Register = () => {
                         <img src={register_avatar} />
                         <h4 className="title">Register</h4>
                         <NavLink style={{ textDecoration: 'none', fontSize: '15px', textAlign: 'center', marginBottom: '10px', color: "blue" }} to='/login'>Already Registered? Please Login</NavLink>
-                        <div className="input-div one">
+                        {/* <div className="input-div one">
                             <div className="reg-i-icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div className="div">
-                                {/* <h5>Username</h5> */}
                                 <input onChange={(e)=>setName(e.target.value)} type="text" placeholder='User name' className="input" />
                             </div>
-                        </div>
+                        </div> */}
                         <div className="input-div one">
                             <div className="reg-i-icon">
                                 <i className="fas fa-user"></i>
@@ -78,7 +77,7 @@ const Register = () => {
                             </div>
                         </div>
                         <Link to="/fr">Forgot Password?</Link>
-                        <button onClick={(e) => handleSubmit(e,name,email,password)} type="submit" className="register-btn" value="Register">Register</button>
+                        <button onClick={(e) => handleSubmit(e,email,password)} type="submit" className="register-btn" value="Register">Register</button>
                     </form>
                 </div>
             </div>
