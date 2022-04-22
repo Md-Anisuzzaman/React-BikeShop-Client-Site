@@ -21,8 +21,8 @@ import Details from './Component/Details/Details';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Product from './Component/Product/Product';
 import NotFound from './NotFound/NotFound';
-import Test from './Component/Test/Test';
 import Contact from './Component/Contact/Contact';
+import Test from './Component/Test/Test';
 
 
 
@@ -54,6 +54,9 @@ function App() {
             <Route path="/contact">
              <Contact></Contact>
             </Route>
+            <Route path="/test">
+             <Test></Test>
+            </Route>
             <PrivateRoute exact path="/product">
               <Product></Product>
             </PrivateRoute>
@@ -68,9 +71,6 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
-            </Route>
-            <Route path="/test">
-              <Test></Test>
             </Route>
             <Route path="/register">
               <Register></Register>

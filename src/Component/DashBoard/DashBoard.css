@@ -113,6 +113,12 @@
   margin-right: 5px;
 } */
 
+#bars{
+  color: #fff;
+}
+
+#close{color: #fff;}
+
 @media only screen and (max-width: 600px) {
   .dash-card{
     display: flex;

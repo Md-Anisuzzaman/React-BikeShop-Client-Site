@@ -10,12 +10,12 @@ import ManageProducts from '../ManageProducts/ManageProducts';
 import MyOrders from '../MyOrders/MyOrders';
 import Pay from '../Payment/Pay';
 import './DashBoard.css'
-import { FaBars} from "react-icons/fa";
-import { FaTimes} from "react-icons/fa";
-import { FaPhabricator} from "react-icons/fa";
-import { FaApplePay} from "react-icons/fa";
-import { FaBandcamp} from "react-icons/fa";
-import {FaStreetView} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import { FaPhabricator } from "react-icons/fa";
+import { FaApplePay } from "react-icons/fa";
+import { FaBandcamp } from "react-icons/fa";
+import { FaStreetView } from "react-icons/fa";
 
 
 
@@ -25,6 +25,8 @@ const DashBoard = () => {
     let { path, url } = useRouteMatch();
     const { user } = useAuth();
     const [isAdmin, setIsAdmin] = useState(false);
+   
+    
 
     useEffect(() => {
         fetch(`https://morning-taiga-95639.herokuapp.com/checkAdmin/${user?.email}`)
@@ -48,6 +50,9 @@ const DashBoard = () => {
                             <i id='bars'><FaBars/></i>
                             <i id='close'><FaTimes/></i>
                         </label> */}
+
+                        <i id='bars'><FaBars /></i>
+                        <i id='close'><FaTimes /></i>
                         <h5 className="text-success fs-4 py-2 mb-3">Users Dashboard Menue</h5>
                         {/* <Link style={{ textDecoration: 'none', fontSize: '18px' }} to={`${url}/addproduct`}>
                             <li className="dashboard-menu">AddProduct</li>
@@ -61,7 +66,6 @@ const DashBoard = () => {
                         <Link style={{ textDecoration: 'none', fontSize: '20px' }} to={`${url}/pay`}>
                             <li className="dashboard-menu"><FaApplePay></FaApplePay> Pay</li>
                         </Link>
-
                         <div className="admin-dashboard">
                             <h5 className="text-danger py-2 mt-3">Admin Dashboard Menue</h5>
                             {

@@ -12,7 +12,7 @@ const Header = () => {
 
             <div className="helloBike">
                 <p><i className="fa-solid fa-phone"></i> 001697889</p>
-                <p className='text-danger buyBuke'>BuyBike</p>
+                <p className='text-danger buyBike'>BuyBike</p>
                 <p><i className="fa-solid fa-house-user"></i> Dhaka,Bangladesh</p>
             </div>
 

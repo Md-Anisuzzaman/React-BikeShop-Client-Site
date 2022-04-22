@@ -1,9 +1,4 @@
-/* .header-body{
-    margin: 5px;
-    margin-left: 7px;
-} */
-
-.helloBike{
+.helloBike {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,57 +6,54 @@
     font-style: italic;
     background-color: aliceblue;
     color: rgba(0, 0, 0, 0.746);
-    /* font-weight: 700; */
-    padding-top: 5px;
+    padding-top: 10px;
     margin: 0;
 }
-.navbar-start{
+.navbar-start {
     background-color: #009688;
-
-}
-.bike-logo{
-width: 100px;
 }
 
-.font-style{
+.bike-logo {
+    width: 100px;
+}
+
+.font-style {
     font-family: 'Poppins', sans-serif;
-    /* font-size: 20px; */
-    line-height: 60px;   
+    line-height: 60px;
 }
 
-.right-side{
-  padding-left: 110px;
-   
+.right-side {
+    padding-left: 110px;
 }
 
-.log-style{
-    font-family: 'Poppins', sans-serif; 
-    text-align: center; 
+.log-style {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     margin: auto;
 }
 
 @media only screen and (max-width: 600px) {
     .right-side {
-     margin-right: 110px;
-     display: flex;
-     flex-direction:column;
-     align-items: flex-start;
-     /* margin-left: 100px; */
-      
+        margin-right: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .log-style{
+    .log-style {
         margin: 0;
     }
 
-    .helloBike{
-        display:flex;
+    .helloBike {
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 15px;
     }
-    .buyBuke{
-        margin-top: 22px;
-    }
-  }
 
+    .helloBike p{
+        margin: 0;
+    }
+
+}
