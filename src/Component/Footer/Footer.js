@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Footer.css';
+
 
 const Footer = () => {
     return (
@@ -21,11 +21,6 @@ const Footer = () => {
                         <br />Happiness is get like most bike  </p>
                     <h4>BuyBike</h4>
                 </div>
-                {/* <div className="mt-3 col-md-3">
-                    <h5>Find us at..</h5>
-                    <br />
-                    <h1><i className="fab fa-facebook-square"></i> <i className="fab fa-instagram"></i> <i className="fab fa-linkedin"></i> <i className="fab fa-twitter-square"></i></h1>
-                </div> */}
                 <div className='col-md-4'>
                     <div classname="input-group">
                         <input type="text" class="form-control" placeholder='Search' />

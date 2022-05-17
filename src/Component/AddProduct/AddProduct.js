@@ -32,21 +32,18 @@ const AddProduct = () => {
                                 className="input-field form-control p-2 m-2 w-100 "
                                 {...register("model")}
                                 placeholder="Model"
-
                             />
 
                             <input
                                 className=" input-field form-control w-100 p-2 m-2"
                                 {...register("details")}
                                 placeholder="Details"
-
                             />
 
                             <input
                                 className="input-field form-control w-100 p-2 m-2 "
                                 {...register("img", { required: true })}
                                 placeholder="Image link"
-
                             />
 
                             <input
@@ -54,11 +51,8 @@ const AddProduct = () => {
                                 {...register("price", { required: true })}
                                 placeholder="Price"
                                 type="number"
-
                             />
-
                             <br />
-
                             <input
                                 className="btn btn-info w-50"
                                 type="submit"

@@ -1,24 +1,15 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
-
 }
-.banner-body{
-    /* background-image: url(../../Images/banner.jpg);
-    height: 500px;
-    background-size: cover;  */
+
+.banner-body {
     display: flex;
     align-items: center;
-    background-color:rgb(231 255 34 / 45%);
-    /* border: 1px solid;
-    box-shadow: 5px 5px 5px 5px; */
     box-shadow: 500px;
-    /* background-image: url('https://www.pngitem.com/pimgs/m/21-218707_wave-png-for-website-transparent-png.png'); */
-    background-image: url("../../Images/wave-removebg-preview.png");
-    /* background-position: right center; */
-    background-position:center bottom;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    min-height: calc(100vh - 111px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), #00000000), url('https://www.teahub.io/photos/full/32-329104_wallpaper-motor-motor-racing.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 70px);
     padding-bottom: 60px;
 }
 
@@ -26,49 +17,55 @@
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 37px;
-    color: rgb(20, 66, 66);
+    font-size: 40px;
+    color: gold;
     text-align: left;
-    line-height: 130%;
+    text-transform: uppercase;
 }
 
-.span-color{
-color: tomato;
+.h3-text span {
+    color: #fe5a1d;
+    text-transform: uppercase;
 }
 
-.text-content{
-    padding-left: 50px;
+.span-color {
+    color: tomato;
+}
+
+.text-content {
+    width: 45%;
+    padding-left: 100px;
     font-weight: 600;
+    text-align: start;
 }
-.text-content p{
 
-    font-size: 15px;
+.text-content .btn-warning {
+    background-color: #fe5a1d;
+    color: #fff;
+}
+
+.text-content p {
+    color: #fff;
     text-align: left;
-
-
+    text-transform: uppercase;
+    line-height: 200%;
+    letter-spacing: 2px;
 }
 
-.image-body{
-   width: 100%;
-   /* padding: 20px;
-   margin-bottom: 25px; */
+.image-body {
+    width: 100%;
 }
 
-.wave-image{
+@media (min-width:320px) and (max-width:768px) {
+    .banner-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-
-}
-
-@media (min-width:320px) and  (max-width:768px){
-  .banner-body{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   /* padding-right: 30px; */
-  }  
-  .text-content .h3-text{
-      padding-right: 20px;
-  }
-
+    .text-content {
+        width: 100%;
+        padding: 25px;
+    }
 }

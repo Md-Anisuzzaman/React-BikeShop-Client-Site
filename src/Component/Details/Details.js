@@ -48,7 +48,6 @@ const Details = () => {
                         <input
                             className="input-field p-2 m-2 w-100 "
                             {...register("model")}
-                            //{...register("model", { required: true })}
                             placeholder="Model"
                             defaultValue={product.model}
                         />
@@ -62,29 +61,23 @@ const Details = () => {
                         <input
                             className="input-field w-100 p-2 m-2 "
                             {...register("email")}
-                            //{...register("email", { required: true })}
                             placeholder="Email"
                             defaultValue={user.email}
                         />
                         <input
                             className="input-field w-100 p-2 m-2 "
                             {...register("address")}
-                            // {...register("address", { required: true })}
                             placeholder="Address"
                         />
 
                         <input
                             className="input-field w-100 p-2 m-2"
                             {...register("price")}
-                            //{...register("price", { required: true })}
                             placeholder="Price"
-                            //type="number"
                             defaultValue={product.price}
 
                         />
-
                         <br />
-
                         <input
                             className="btn btn-warning mt-5 mb-5 w-50"
                             type="submit"

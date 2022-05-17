@@ -4,13 +4,14 @@
     align-items: center;
     justify-content: space-evenly;
     font-style: italic;
-    background-color: aliceblue;
-    color: rgba(0, 0, 0, 0.746);
+    background-color: #fe5a1d;
+    color: #fff;
     padding-top: 10px;
     margin: 0;
 }
-.navbar-start {
-    background-color: #009688;
+
+.navbar {
+    padding: 0;
 }
 
 .bike-logo {
@@ -19,11 +20,11 @@
 
 .font-style {
     font-family: 'Poppins', sans-serif;
-    line-height: 60px;
+    line-height: 55px;
 }
 
 .right-side {
-    padding-left: 110px;
+    padding-left: 160px;
 }
 
 .log-style {
@@ -52,7 +53,7 @@
         padding: 15px;
     }
 
-    .helloBike p{
+    .helloBike p {
         margin: 0;
     }
 

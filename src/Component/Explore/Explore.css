@@ -1,62 +1,39 @@
- /* .bikeItems-border{
-    border: 2px solid cyan;
-} */
-
-/* .explore-cart{
-    background-color: #0f131c;
-    border: 1px solid gray;
-    height: 350px;
-    border: 1px solid cyan;
-    color: white;
-} */
-
- /* .img-wrap{
-     height: 210px;
-     width: 85%;
-      overflow-y: hidden;
-     object-fit: contain;
-}  */
-
-.explore-cart{
+.explore-cart {
     background-color: #ffff;
     border: 1px solid gray;
     width: 70%;
     height: 90%;
     margin-left: 70px;
-    /* background-color:rgb(66 193 187 / 15%); */
-    /* background-color:rgba(66, 143, 193, 0.44); */
     border-radius: 10px;
     box-shadow: 100px;
-    box-shadow: 10px 10px 10px 10px gray ;
+    box-shadow: 10px 10px 10px 10px gray;
 }
 
-.div-image{
-    overflow: hidden; 
+.div-image {
+    overflow: hidden;
     border-radius: 7px;
- }
- .div-image img{
- transition: 1s;
- }
- 
- .div-image img:hover{
-     transform: scale(1.2);
- }
- 
- .img-wrap{
-     margin-top: 10px;
-     height: 200px;
-     width: calc(100% - 20px);
-     /* width: 100%; */
-      /* overflow-y: hidden; */
-      /* object-fit: contain; */
- }
+}
 
- .bottom-div{
-     background-color:#535050;;
-     border-radius: 5px;
- }
+.div-image img {
+    transition: 1s;
+}
 
- .bottom-div p{
- padding: 20px;
- }
- 
+.div-image img:hover {
+    transform: scale(1.2);
+}
+
+.img-wrap {
+    margin-top: 10px;
+    height: 200px;
+    width: calc(100% - 20px);
+}
+
+.bottom-div {
+    background-color: #535050;
+    ;
+    border-radius: 5px;
+}
+
+.bottom-div p {
+    padding: 20px;
+}
