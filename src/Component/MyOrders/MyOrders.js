@@ -21,13 +21,13 @@ const MyOrder = () => {
 
 
     useEffect(() => {
-        fetch(`https://morning-taiga-95639.herokuapp.com/myOrders/${user?.email}`)
+        fetch(`http://localhost:8000/myOrders/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setBookingOrders(data));
     }, [user?.email]);
 
     const handleDelete = id => {
-        const url = `https://morning-taiga-95639.herokuapp.com/orders-delete/${id}`;
+        const url = `http://localhost:8000/orders-delete/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -14,7 +14,7 @@ const Details = () => {
 
     const onSubmit = (data, e) => {
         data.email = user?.email;
-        fetch("https://morning-taiga-95639.herokuapp.com/addOrderItem", {
+        fetch("http://localhost:8000/addOrderItem", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -29,7 +29,7 @@ const Details = () => {
     };
 
     useEffect(() => {
-        fetch(`https://morning-taiga-95639.herokuapp.com/singleProduct/${productId}`)
+        fetch(`http://localhost:8000/singleProduct/${productId}`)
             .then((res) => res.json())
             .then((data) => setProduct(data));
     }, [productId]);

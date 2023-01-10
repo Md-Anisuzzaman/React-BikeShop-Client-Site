@@ -24,7 +24,7 @@ const ManageOrders = () => {
     //         .then((data) => setBookingOrders(data));
     // }, [user?.email]);
     useEffect(() => {
-        fetch('https://morning-taiga-95639.herokuapp.com/allorders')
+        fetch('http://localhost:8000/allorders')
             .then((res) => res.json())
             .then((data) => setBookingOrders(data));
     }, [user?.email]);

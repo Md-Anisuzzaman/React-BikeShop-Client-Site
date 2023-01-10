@@ -29,7 +29,7 @@ const DashBoard = () => {
     
 
     useEffect(() => {
-        fetch(`https://morning-taiga-95639.herokuapp.com/checkAdmin/${user?.email}`)
+        fetch(`http://localhost:8000/checkAdmin/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data[0]?.role === "admin") {

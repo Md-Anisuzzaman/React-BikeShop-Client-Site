@@ -7,18 +7,18 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("https://morning-taiga-95639.herokuapp.com/allproduct")
+        fetch("http://localhost:8000/allproduct")
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
     const handleDelete = id => {
-        const url = `https://morning-taiga-95639.herokuapp.com/allproduct-delete/${id}`;
+        const url = `http://localhost:8000/allproduct-delete/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(data => {
-                fetch('https://morning-taiga-95639.herokuapp.com/allproduct')
+                fetch('http://localhost:8000/allproduct')
                     .then(res => res.json())
                     .then(data => setProducts(data))
                 console.log(data);

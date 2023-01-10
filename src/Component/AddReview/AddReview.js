@@ -5,7 +5,7 @@ import styles from './AddReview.module.css'
 const AddReview = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
-        fetch("https://morning-taiga-95639.herokuapp.com/addreview", {
+        fetch("http://localhost:8000/addreview", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

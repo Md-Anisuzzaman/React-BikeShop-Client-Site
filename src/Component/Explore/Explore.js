@@ -5,7 +5,7 @@ import './Explore.css';
 const Explore = () => {
     const [bikeItems, setBikeItems] = useState([]);
     useEffect(() => {
-        fetch("https://morning-taiga-95639.herokuapp.com/allproduct")
+        fetch("http://localhost:8000/allproduct")
             .then(res => res.json())
             .then(data => setBikeItems(data));
     }, [])
